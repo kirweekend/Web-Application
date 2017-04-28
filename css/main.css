@@ -1,39 +1,65 @@
-body{
-  padding-top: 50px;
+@import url('https://fonts.googleapis.com/css?family=Lato|Raleway');
+
+body {
+  background-color: #f2f2f2;
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 16px;
+  color: #555;
+
+
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+
+  margin-top: 70px;
 }
 
-#headerWrapper{
-  position: relative;
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
-  height: 600px;
-  background-image: url(../images/headerlogo/background.png);
-  background-repeat: no-repeat;
-  background-size: 100% 700px;
-  background-position: top center;
-  background-attachment: fixed;
-}
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway";
+    font-weight: 300;
+    color: #333;
+  }
 
-#logotext{
-  position: absolute;
-  width: 100%;
-  height: 100px;
-  background-image: url(../images/headerlogo/text.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 70% 100px;
-  top: 50%;
-}
+  p {
+    line-height: 28px;
+    margin-bottom: 25px;
+  }
 
-#back-flower{
-  position: absolute;
-  width: 100%;
-  height: 350px;
-  background-image: url(../images/headerlogo/back-flower.png);
-  background-position: left bottom;
-  background-repeat: no-repeat;
-  background-size: auto 350px;
-  top: 400px;
-  left: -25px;
-}
+  .centered {
+    text-align: center;
+  }
+
+  a{
+    color: #f85c37;
+  }
+
+  a:hover, a:focus {
+    color: #7b7b7b;
+    text-decoration: none;
+    outline: 0;
+  }
+
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+  }
+
+  .navbar {
+    font-weight: 800;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .navbar-inverse {
+    background: #2d2d2d;
+    border-color: #2d2d2d;
+  }
+
+  .navbar-brand {
+    font-size: 30px;
+  }

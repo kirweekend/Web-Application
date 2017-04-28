@@ -1,49 +1,119 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Flower Boutique</title>
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/main.css">
-  <meta name="viewport" content="width=device-width, initial-scal=1, user-scalable=no">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-</head>
+<?php include "layout/head.php"; ?>
 <body>
-  <!-- Top Nav Bar -->
-  <nav class="navbar navbar-default navbar-fixed-top">
+  <?php include "layout/nav.php"; ?>
+  <div id="headerwrap">
     <div class="container">
-      <a href="index.php" class="navbar-brand">Flower Boutique</a>
-      <ul class="nav navbar-nav">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Flowers<span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Roses</a></li>
-            <li><a href="#">Tulips</a></li>
-            <li><a href="#">Strawberry</a></li>
-          </ul>
-        </li>
-      </ul>
+      <div class="row centered">
+        <div class="col-lg-8 col-lg-offset-2">
+          <h1>Bootstrap is awesome!</h1>
+          <h2>Сайты на Bootstrap отличные</h2>
+        </div>
+      </div>
     </div>
-  </nav>
-
-  <!-- Header -->
-  <div id="headerWrapper">
-    <div id="back-flower"></div>
-    <div id="logotext"></div>
+  </div>
+  <div class="container w">
+    <div class="row centered">
+      <br><br>
+      <div class="col-lg-4">
+        <i class="fa fa-heart"></i>
+        <h4>Дизайн</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+      </div>
+      <div class="col-lg-4">
+        <i class="fa fa-laptop"></i>
+        <h4>Компьютеры</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+      </div>
+      <div class="col-lg-4">
+        <i class="fa fa-trophy"></i>
+        <h4>Помощь</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+      </div>
+    </div>
+    <br><br>
+  </div>
+  <div id="dg">
+    <div class="container">
+      <div class="row centered">
+        <h4>Последние работы</h4>
+        <br>
+        <div class="col-lg-4">
+          <div class="tilt">
+            <a href="#"><img src="img/p01.png" alt=""></a>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="tilt">
+            <a href="#"><img src="img/p02.png" alt=""></a>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="tilt">
+            <a href="#"><img src="img/p03.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container wb">
+    <div class="row centered">
+      <br><br>
+      <div class="col-lg-8 col-lg-offset-2">
+        <h4>Мы создаем сайты</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+        <p><br><br></p>
+      </div>
+      <div class="col-lg-2"></div>
+      <div class="col-lg-10 col-lg-offset-1">
+        <img src="img/munter.png" alt="" class="img-responsive">
+      </div>
+    </div>
+  </div>
+  <div id="lg">
+    <div class="container">
+      <div class="row centered">
+        <h4>Партнеры</h4>
+        <div class="col-lg-2 col-lg-offset-1">
+          <img src="img/c01.gif" alt="">
+        </div>
+        <div class="col-lg-2">
+          <img src="img/c02.gif" alt="">
+        </div>
+        <div class="col-lg-2">
+          <img src="img/c03.gif" alt="">
+        </div>
+        <div class="col-lg-2">
+          <img src="img/c04.gif" alt="">
+        </div>
+        <div class="col-lg-2">
+          <img src="img/c05.gif" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="r">
+    <div class="container">
+      <div class="row centered">
+        <div class="col-lg-8 col-lg-offset-2">
+          <h4>Разарботка сайтов на профессиональном уровне</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="f">
+    <div class="container">
+      <div class="row centered">
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-vk"></i></a>
+      </div>
+    </div>
   </div>
 
-<script>
-  jQuery(window).scroll(function(){
-    var vscroll = jQuery(this.)scrollTop();
-    jQuery('#logotext').css({
-      "transform" : "translate(0px, "+vscroll/2+"px)"
-    });
-
-    var vscroll = jQuery(this.)scrollTop();
-    jQuery('#back-flower').css({
-      "transform" : "translate(0px, "+vscroll/12+"px)"
-    });
-  });
-</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

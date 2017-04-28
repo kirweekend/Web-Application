@@ -6,7 +6,6 @@
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
-  overflow-x: hidden;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
@@ -2443,8 +2442,6 @@ table th[class*="col-"] {
 .table-responsive {
   min-height: .01%;
   overflow-x: auto;
-  width: 50%;
-  margin-left: 2%;
 }
 @media screen and (max-width: 767px) {
   .table-responsive {
@@ -2633,8 +2630,6 @@ input[type="search"] {
 }
 .form-group {
   margin-bottom: 15px;
-  margin-left: 10px;
-  margin-right: 10px;
 }
 .radio,
 .checkbox {
@@ -3436,10 +3431,6 @@ fieldset[disabled] .btn-link:focus {
   color: #777;
   text-decoration: none;
 }
-
-.btn-group-lg {
-  padding: 20px;
-}
 .btn-lg,
 .btn-group-lg > .btn {
   padding: 10px 16px;
@@ -3826,7 +3817,6 @@ tbody.collapse.in {
   position: relative;
   display: table;
   border-collapse: separate;
-  padding-left: 20px;
 }
 .input-group[class*="col-"] {
   float: none;
@@ -4284,7 +4274,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-brand {
   float: left;
   height: 50px;
-  padding: 0px 10px 0px 10px;
+  padding: 15px 15px;
   font-size: 18px;
   line-height: 20px;
 }
@@ -4879,10 +4869,6 @@ a.label:focus {
 }
 .label-default {
   background-color: #777;
-  border-radius: 6px;
-  line-height: 1.3333333;
-  font-size: 14px;
-  background-color: #1aba44;
 }
 .label-default[href]:hover,
 .label-default[href]:focus {
@@ -4890,10 +4876,6 @@ a.label:focus {
 }
 .label-primary {
   background-color: #337ab7;
-  padding: 10px 16px;
-  font-size: 18px;
-  line-height: 1.3333333;
-  border-radius: 6px;
 }
 .label-primary[href]:hover,
 .label-primary[href]:focus {
@@ -4976,6 +4958,7 @@ a.badge:focus {
 .jumbotron {
   padding-top: 30px;
   padding-bottom: 30px;
+  margin-bottom: 30px;
   color: inherit;
   background-color: #eee;
 }
@@ -6770,22 +6753,5 @@ button.close {
   .hidden-print {
     display: none !important;
   }
-}
-
-.footer {
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  max-height: 500px;
-  background-color: #042151;
-}
-.container .text-muted {
-  margin: 20px 0;
-  color: white;
-  font-weight: bold;
-}
-a:link {
-  text-decoration: none;
 }
 /*# sourceMappingURL=bootstrap.css.map */
