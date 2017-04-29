@@ -11,7 +11,7 @@
   if (!array_key_exists("cart", $_SESSION)) {
       $_SESSION["cart"] = array();
   }
-  require_once "../config/connection.php";
+  require_once "config/connection.php";
   $db = connection::get_instance();
   $mysqli = $db->get_connection();
   $mysqli->query("set names utf8");
