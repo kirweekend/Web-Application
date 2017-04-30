@@ -21,11 +21,10 @@
         <li><a href="#">Products</a></li>
         <li><a href="pages/cart.php">Cart</a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <?php echo $name["first_name"]; ?> <span class="caret"></span></a>
-          <ul class="dropdown-menu">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $name["first_name"]; ?> <b class="caret"></b></a>
+          <ul class="dropdown-menu" role="menu">
             <li><a href="../pages/changepassword.php">Change Password</a></li>
-            <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
-          </ul>
+          </li>
 
           <?php if (array_key_exists("admin", $_SESSION)){?>
             <li><a href="pages/addproduct.php">Add Product</a></li>
@@ -38,8 +37,8 @@
         <?php
       } else {?>
         <li><a href="#">About</a></li>
-        <li><a href="pages/login.php">Login</a></li>
-        <li><a href="pages/register.php">Register</a></li>
+        <li><a href="pages/registration.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="pages/login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
       <?php
     }
     ?>
