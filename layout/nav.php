@@ -6,7 +6,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="../index.php">Apple</a>
+      <a class="navbar-brand" href="index.php">Apple</a>
     </div>
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
@@ -17,17 +17,16 @@
           $name = $result->fetch_assoc();
          ?>
 
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="pages/cart.php">Cart</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="cart.php">Cart</a></li>
         <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $name["first_name"]; ?> <b class="caret"></b></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="../pages/changepassword.php">Change Password</a></li>
+            <li><a href="changepassword.php">Change Password</a></li>
           </li>
 
           <?php if (array_key_exists("admin", $_SESSION)){?>
-            <li><a href="pages/addproduct.php">Add Product</a></li>
+            <li><a href="addproduct.php">Add Product</a></li>
             <?php
            } ?>
             <li role="separator" class="divider"></li>
@@ -37,8 +36,8 @@
         <?php
       } else {?>
         <li><a href="#">About</a></li>
-        <li><a href="pages/registration.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="pages/login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="registration.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
       <?php
     }
     ?>
