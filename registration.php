@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
   <?php include "layout/head.php"; ?>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script> 
   <body>
     <div class="page-wrap">
       <?php include "layout/nav.php" ?>

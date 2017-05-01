@@ -1,13 +1,6 @@
 <!DOCTYPE html>
 <html>
 <?php include "layout/head.php"; ?>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script> 
-<script type="text/javascript">
-$(document).ready(function() {
-    $('dropdown-toggle').dropdown()
-});
-</script> 
 <body>
   <?php include "layout/nav.php"; ?>
   <div id="headerwrap">
@@ -20,7 +13,7 @@ $(document).ready(function() {
       </div>
     </div>
   </div>
-    <!-- PORTFOLIO SECTION -->
+
   <div id="dg">
     <div class="container">
       <div class="row centered">
@@ -41,9 +34,23 @@ $(document).ready(function() {
           <a href="#"><img src="assets/img/p02.png" alt=""></a>
           </div>
         </div>
-      </div><!-- row -->
-    </div><!-- container -->
-  </div><!-- DG -->
+      </div>
+    </div>
+  </div>
+    <ul>
+        <?php
+             $results = $mysqli->query("SELECT id,name,description,price FROM kirill_shop_product;");
+
+      while ($row = $results->fetch_assoc()) {
+            ?>
+            <li>
+              <a href="pages/description.php?id=<?=$row['id']?>">
+          <?=$row["name"]?></a>
+        <?=$row["description"] ?>
+              <?=$row["price"]?> EUR
+            </li>
+      <?php } ?>
+    </ul>
   <?php include "layout/footer.php" ?>
 </body>
 </html>

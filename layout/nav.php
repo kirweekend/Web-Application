@@ -17,7 +17,7 @@
           $name = $result->fetch_assoc();
          ?>
 
-        <li><a href="#">Home</a></li>
+        <li><a href="products.php">Products</a></li>
         <li><a href="cart.php">Cart</a></li>
         <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $name["first_name"]; ?> <b class="caret"></b></a>

@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html>
   <?php include "layout/head.php"; ?>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script> 
-  <script type="text/javascript" src="../js/login_process.js"></script>  
+
   <body>
     <div class="page-wrap">
     <?php include "layout/nav.php" ?>
@@ -32,6 +30,10 @@
     </div>
     </div>
     </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script> 
+  <script type="text/javascript" src="js/login_process.js"></script> 
+  <script src="js/active.js"></script> 
     <?php $mysqli->close(); ?>
   </body>
 </html>

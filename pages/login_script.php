@@ -13,15 +13,16 @@
    $statement->execute();
    $results = $statement->get_result();
    $row = $results->fetch_assoc();
-   $statement->execute();
-   $results = $statement->get_result();
-   $row = $results->fetch_assoc();
 
   if($row) {
     header("Location: ../index.php");
     $_SESSION["user"] = $row["id"];
     }
+    if ($row["admin"] == 1) {
+      $_SESSION["admin"] = $row["admin"];
+    }
   
+
    else {
     echo "Email / password combination incorrect";
   }
