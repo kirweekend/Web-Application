@@ -68,8 +68,6 @@ body {
 
 #f {
   background: #2d2d2d;
-  padding-top: 30px;
-  padding-bottom: 30px;
 }
 
 #f i {
@@ -106,4 +104,23 @@ body {
 
 #dg h2 {
   font-weight: 700;
+}
+
+.thumbnail {
+  background:#f2f2f2;
+  border-color: unset;
+  border: transparent;
+}
+
+#headerWrapper{
+  position: relative;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  min-height: 680px;
+  background-image: url(../assets/img/apple.jpg);
+  background-repeat: no-repeat;
+  background-size: 2400px;
+  background-position: top center;
+  min-width: 725px;
 }

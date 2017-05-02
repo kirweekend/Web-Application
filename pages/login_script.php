@@ -15,7 +15,7 @@
    $row = $results->fetch_assoc();
 
   if($row) {
-    header("Location: ../index.php");
+    header("Location: ../products.php");
     $_SESSION["user"] = $row["id"];
     }
     if ($row["admin"] == 1) {

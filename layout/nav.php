@@ -35,7 +35,6 @@
         </li>
         <?php
       } else {?>
-        <li><a href="#">About</a></li>
         <li><a href="registration.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
         <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
       <?php
