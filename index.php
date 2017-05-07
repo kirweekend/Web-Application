@@ -7,7 +7,6 @@
     
   </div>
 
-  <div id="headerWrapper">
     <div class="container">
       <div class="row centered">
         <div class="col-lg-8 col-lg-offset-2">
@@ -16,6 +15,9 @@
         </div>
       </div>
     </div>
+
+  <div class="row">
+  <img src="assets/img/apple.jpg" class="img-responsive center-block">
   </div>
 
 

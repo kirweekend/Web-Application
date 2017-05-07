@@ -60,7 +60,7 @@
     
     
       <div class="thumbnail">
-        <img src="assets/img/<?=$row['image']?>" class="description-image-cart" alt="products">
+        <img src="assets/img/<?=$row['image']?>" class="img-responsive" alt="products">
       </div>
     
   

@@ -26,7 +26,9 @@
       <div class="row centered">
         <div class="col-lg-4">
           <div class="tilt">
-          <a href="#"><img src="assets/img/<?=$row['image']?>" class="description-image" alt="products"></a>
+          <div align="center">
+          <a href="#"><img src="assets/img/<?=$row['image']?>" class="img-responsive" alt="products"></a>
+          </div>
         </div>
       </div>
     </div>

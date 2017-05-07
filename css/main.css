@@ -112,15 +112,6 @@ body {
   border: transparent;
 }
 
-#headerWrapper{
-  position: relative;
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
-  min-height: 680px;
-  background-image: url(../assets/img/apple.jpg);
-  background-repeat: no-repeat;
-  background-size: 2400px;
-  background-position: top center;
+
   min-width: 725px;
 }

@@ -23,7 +23,10 @@
       <div class="row centered">
         <div class="col-lg-4">
           <div class="tilt">
-          <a href="description.php?id=<?=$row['id']?>"><img src="assets/img/<?=$row['image']?>" class="description-image" alt="products"></a>
+          <div align="center">
+            <a href="description.php?id=<?=$row['id']?>"><img src="assets/img/<?=$row['image']?>" class="img-responsive" alt="products"></a>
+          </div>
+          
           </div>
         </div>
         <h3><?=$row["name"]?></a></h3>
